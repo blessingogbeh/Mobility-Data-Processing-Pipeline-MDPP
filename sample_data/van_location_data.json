@@ -1,0 +1,14 @@
+{
+    "Records": [
+        {"Data": {"van_id": "V001", "lat": 45.5200, "lon": -73.5500, "timestamp": "2024-11-18T10:00:00Z"}, "PartitionKey": "1"},
+        {"Data": {"van_id": "V002", "lat": 45.5210, "lon": -73.5510, "timestamp": "2024-11-18T10:01:00Z"}, "PartitionKey": "2"},
+        {"Data": {"van_id": "V003", "lat": 45.5220, "lon": -73.5520, "timestamp": "2024-11-18T10:02:00Z"}, "PartitionKey": "3"},
+        {"Data": {"van_id": "V004", "lat": 45.5230, "lon": -73.5530, "timestamp": "2024-11-18T10:03:00Z"}, "PartitionKey": "4"},
+        {"Data": {"van_id": "V005", "lat": 45.5240, "lon": -73.5540, "timestamp": "2024-11-18T10:04:00Z"}, "PartitionKey": "5"},
+        {"Data": {"van_id": "V006", "lat": 45.5250, "lon": -73.5550, "timestamp": "2024-11-18T10:05:00Z"}, "PartitionKey": "6"},
+        {"Data": {"van_id": "V007", "lat": 45.5260, "lon": -73.5560, "timestamp": "2024-11-18T10:06:00Z"}, "PartitionKey": "7"},
+        {"Data": {"van_id": "V008", "lat": 45.5270, "lon": -73.5570, "timestamp": "2024-11-18T10:07:00Z"}, "PartitionKey": "8"},
+        {"Data": {"van_id": "V009", "lat": 45.5280, "lon": -73.5580, "timestamp": "2024-11-18T10:08:00Z"}, "PartitionKey": "9"},
+        {"Data": {"van_id": "V010", "lat": 45.5290, "lon": -73.5590, "timestamp": "2024-11-18T10:09:00Z"}, "PartitionKey": "10"}
+    ]
+}

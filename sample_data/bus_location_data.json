@@ -1,0 +1,44 @@
+{
+    "Records": [
+        {
+            "Data": "{\"bus_id\":\"B001\",\"lat\":45.5017,\"lon\":-73.5673,\"timestamp\":\"2024-11-18T10:00:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B002\",\"lat\":45.5020,\"lon\":-73.5676,\"timestamp\":\"2024-11-18T10:01:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B003\",\"lat\":45.5030,\"lon\":-73.5680,\"timestamp\":\"2024-11-18T10:02:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B004\",\"lat\":45.5040,\"lon\":-73.5690,\"timestamp\":\"2024-11-18T10:03:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B005\",\"lat\":45.5050,\"lon\":-73.5700,\"timestamp\":\"2024-11-18T10:04:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B006\",\"lat\":45.5060,\"lon\":-73.5710,\"timestamp\":\"2024-11-18T10:05:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B007\",\"lat\":45.5070,\"lon\":-73.5720,\"timestamp\":\"2024-11-18T10:06:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B008\",\"lat\":45.5080,\"lon\":-73.5730,\"timestamp\":\"2024-11-18T10:07:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B009\",\"lat\":45.5090,\"lon\":-73.5740,\"timestamp\":\"2024-11-18T10:08:00Z\"}",
+            "PartitionKey": "1"
+        },
+        {
+            "Data": "{\"bus_id\":\"B010\",\"lat\":45.5100,\"lon\":-73.5750,\"timestamp\":\"2024-11-18T10:09:00Z\"}",
+            "PartitionKey": "1"
+        }
+    ]
+}

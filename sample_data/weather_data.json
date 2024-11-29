@@ -1,0 +1,48 @@
+{
+        "Records": [
+            {
+                "Data": "{\"lat\": 45.5017, \"lon\": -73.5673, \"temp\": -5, \"precipitation\": \"snow\", \"timestamp\": \"2024-11-18T10:00:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5020, \"lon\": -73.5676, \"temp\": -4, \"precipitation\": \"snow\", \"timestamp\": \"2024-11-18T10:01:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5030, \"lon\": -73.5680, \"temp\": -6, \"precipitation\": \"rain\", \"timestamp\": \"2024-11-18T10:02:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5040, \"lon\": -73.5690, \"temp\": -7, \"precipitation\": \"rain\", \"timestamp\": \"2024-11-18T10:03:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5050, \"lon\": -73.5700, \"temp\": -3, \"precipitation\": \"snow\", \"timestamp\": \"2024-11-18T10:04:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5060, \"lon\": -73.5710, \"temp\": -2, \"precipitation\": \"clear\", \"timestamp\": \"2024-11-18T10:05:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5070, \"lon\": -73.5720, \"temp\": -1, \"precipitation\": \"clear\", \"timestamp\": \"2024-11-18T10:06:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5080, \"lon\": -73.5730, \"temp\": -3, \"precipitation\": \"rain\", \"timestamp\": \"2024-11-18T10:07:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5090, \"lon\": -73.5740, \"temp\": -4, \"precipitation\": \"rain\", \"timestamp\": \"2024-11-18T10:08:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5100, \"lon\": -73.5750, \"temp\": -5, \"precipitation\": \"snow\", \"timestamp\": \"2024-11-18T10:09:00Z\"}",
+                "PartitionKey": "1"
+            },
+            {
+                "Data": "{\"lat\": 45.5100, \"lon\": -73.5750, \"temp\": -5, \"precipitation\": \"snow\", \"timestamp\": \"2024-11-18T10:09:00Z\"}",
+                "PartitionKey": "1"
+            }
+        ]
+    }
