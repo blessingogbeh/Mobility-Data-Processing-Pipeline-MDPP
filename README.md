@@ -1,7 +1,7 @@
 # MDPP (Mini Data Processing Pipeline)
 
 ## Overview
-MDPP is a real-time data processing pipeline that correlates bus locations with weather data to identify transportation delays caused by adverse weather conditions. The system implores a cloud-native approach to achieve mini data processing pipeline for real-time data integration and analytics. The solution utilizes amazon kinesis data streams to injest mobility data (from producer; json) in real time. This data is then integrated and processed by AWS Lambda (consumer). The proccesed data is stored in a stateful NoSql database (Amazon DynamoDB) and insights from the processed data are visible in a Amazon cloudwatch dashbord.
+MDPP is a real-time data processing pipeline that correlates bus locations with weather data to identify transportation delays caused by adverse weather conditions. The system uses a serverless cloud-native approach to achieve a mini data processing pipeline for real-time data integration and analytics. The solution utilizes Amazon kinesis data streams to ingest mobility data (from the producer; JSON) in real-time. This data is then integrated and processed by AWS Lambda (consumer). The processed data is stored in a stateful NoSql database (Amazon DynamoDB) and insights from the processed data are visible in an Amazon Cloudwatch dashboard.
 
 ## Architecture
 
@@ -11,7 +11,7 @@ MDPP is a real-time data processing pipeline that correlates bus locations with 
 ## Features
 
 - Data quality validation
-- Real-time processing mobility data
+- Real-time processing of mobility data
 - Weather condition monitoring and correlation
 - Automated bus delay detection for adverse weather
 - Passenger count tracking
@@ -40,7 +40,7 @@ cd mdpp
 ```
 
 In a terminal opened in ./mdpp directory, initialize the terraform configuration "infra_dpp.tf". This enables Terraform to be able to track changes in the current configuration module.
-It initializes a working directory and downloads the necessary provider plugins and modules and setting up the backend for storing your infrastructure's state.
+It initializes a working directory, downloads the necessary provider plugins and modules, and sets up the backend for storing your infrastructure's state.
 ```bash
 terraform init
 ```
@@ -54,31 +54,31 @@ terrafrom plan
 ```
 to see an execution plan, This lets you preview the changes that Terraform plans to make to your infrastructure.
 
-Its now time to actually provision the resources. The following command executes planned actions, creating, updating, or deleting infrastructure resources to match the new state outlined in your IaC - infra_dpp.tf
+It's now time to actually provision the resources. The following command executes planned actions, creating, updating, or deleting infrastructure resources to match the new state outlined in your IaC - infra_dpp.tf
 
 ```bash
 terraform apply
 ```
 
-Navigate to the [aws console](https://aws.amazon.com/console/) and sign in with you account credentials you got when you created the account in the Prequisites section.
+Navigate to the [aws console](https://aws.amazon.com/console/) and sign in with the account credentials you got when you created the account in the Prerequisites section.
 
-In the search bar type in and open aws kinesis, s3, IAM, Lambda, DynamoDB and Amazon Cloudwatch Dashboard in different tabs. You should find the provisioned resources as described in the main terraform configuration file infra_dpp.tf: 
+In the search bar type in and open aws kinesis, s3, IAM, Lambda, DynamoDB, and Amazon Cloudwatch Dashboard in different tabs. You should find the provisioned resources as described in the main terraform configuration file infra_dpp.tf: 
 
 Kinesis - 3 data streams; bus-location-stream, van-location-stream, weather-stream.
 
-S3 - A bucket named mdpp-lambda-code-bucket is present and has a zipped file, processing.zip, in it containg the library dependencies that enables the Lambda function to run successfully.
+S3 - A bucket named mdpp-lambda-code-bucket is present and has a zipped file, processing.zip, in it containing the library dependencies that enable the Lambda function to run successfully.
 
-IAM - In this tab, navigate to roles on the left hand pane and click on role. The lambda_role resource is what enables lambda function seamless interaction with the other aws services.
+IAM - In this tab, navigate to roles on the left-hand pane and click on role. The lambda_role resource is what enables the lambda function seamless interaction with the other AWS services.
 
 Lambda - This is where our data is actually processed using the data_processing.py function.
 
-DynamoDB - A dynamoDB table (insights-table) was created. this stores the results of the processed data for analytics and visualiation.
+DynamoDB - A dynamoDB table (insights-table) was created. this stores the results of the processed data for analytics and visualization.
 
 Cloudwatch_Dashboard - takes metrics from the dynamoDB table and displays it in a dashboard.
 
 
 #
-We can can push data into our kinesis data streams and let the pipeline handle the rest.
+We can push data into our kinesis data streams and let the pipeline handle the rest.
 In a CLI opened in ./mdpp, run the following command.
 ```bash
 aws kinesis put-records --stream-name "bus-location-stream"  --cli-input-json file://sample_data/bus_location_data.json --region us-east-1
@@ -88,6 +88,6 @@ aws kinesis put-records --stream-name "van-location-stream"  --cli-input-json fi
 aws kinesis put-records --stream-name "weather-stream"  --cli-input-json file://sample_data/weather_data.json --region us-east-1
 ```
 #
-If all goes well, you should find the pipeline executed and we have a table of processed data in DynamoDB and some populated metrices in the cloudwatch dashboard.
+If all goes well, you should find the pipeline executed and we have a table of processed data in DynamoDB and some populated metrics in the Cloudwatch dashboard.
 
 This is a work in progress. 
